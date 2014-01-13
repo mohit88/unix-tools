@@ -1,15 +1,15 @@
-1 hello how are u?
-3 fvskjbdsfjk
-10 kjdf d
-4 dfvbzdfkdjv vjdbfv kjb
-8 kjd ndfkj
+1 hello        how are u?
 2 i am fine
-5 dfjvadfj vdvf djabdfdkj df
-11 d fvakfd kv f
-12 kjdfskvkjs
-9 dvvn  eaav
-7 mkakfv kajdfk vdkv  dfv adjvakj dv
-14 kjkddfv kdj nd kjdfdjk d nd
-6 kdnf vkjzdfefrv kjvb adkjv  a dj
-15 kjd fjd ji d dj do evd dfk dfldfndjlfnfjn
-13 sfkjvbkxjfiu insdjvf djb ijd
+3 fvskj       bdsfjk
+4 dfvbzdf       kdjv vjdbfv kjb
+5 df       jvadfj v       dvf djabdfdkj df
+6 kdnf vkjzd       fefrv k       jvb adkjv  a dj
+7 mkakfv        kajdfk vdkv         dfv adjvakj dv
+8 kjd nd       fkj
+9 dvvn         eaav
+10        kjdf d
+11 d fvakf       d kv f
+      12 kjdfskv
+13 sfkjvbkxjfiu               insdjvf djb ijd
+14 kjkddfv kdj nd        kjdfdjk d               nd
+15 kjd fjd ji        d dj do evd dfk        dfldf       ndjlfnfjn
