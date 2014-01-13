@@ -2,8 +2,6 @@ package mohitsha.unixtools.tail;
 
 import mohit.myfilereader.MyFileReader;
 
-import java.util.Scanner;
-
 public class Tail{
     void printLines(String[] lines,int start,int end){
         for (int index = start; index < end; index++){
@@ -14,10 +12,10 @@ public class Tail{
     public static void main(String[] args) {
         Tail tail = new Tail();
 
-        String fileName = new String(args[0]);
+        String fileName = args[0];
 
         int noOfLines = 10;
-        if(args.length == 2) noOfLines = Integer.parseInt(args[1]) * -1;
+        if(args.length == 2) noOfLines = Math.abs(Integer.parseInt(args[1]));
 
         String fileContent = new MyFileReader().readFile(fileName);
         String[] lines = fileContent.split("\n");
