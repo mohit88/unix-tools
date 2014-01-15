@@ -10,10 +10,9 @@ public class Cut {
 
         CutInputLib cutInput = new CutInputLib();
         cutInput.getInput(args);
+        String output = null;
         String fileContent = new MyFileReader().readFile(cutInput.getFileName());
-        System.out.println(cutInput.isCharacterCheck());
-        System.out.println(cutInput.isFieldCheck());
-        System.out.println(cutInput.getStart());
-
+        if(cutInput.isFieldCheck()) output = cutInput.getOnlyFields(fileContent);
+        System.out.println(output);
     }
 }

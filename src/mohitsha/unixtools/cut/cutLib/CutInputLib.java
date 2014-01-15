@@ -9,6 +9,7 @@ public class CutInputLib {
     private boolean characterCheck;
     private int start;
     private int end;
+    private String delimiter;
 
     public CutInputLib(){
         this.fileName = null;
@@ -16,8 +17,9 @@ public class CutInputLib {
         this.characterCheck = false;
         this.start = 0;
         this.end = 0;
+        this.delimiter = " ";
     }
-    void isOption(String option){
+    private void isOption(String option){
         Scanner scanOption = new Scanner(option).useDelimiter("-");
         if("f".equals(scanOption.next("[cf]{1}"))) this.fieldCheck = true;
         else this.characterCheck = true;
@@ -28,6 +30,21 @@ public class CutInputLib {
     public void getInput(String[] options){
         this.fileName = options[0];
         this.isOption(options[1]);
+    }
+
+    public String getOnlyFields(String fileContent){
+        StringBuilder result = new StringBuilder("");
+        String[] lines = fileContent.split("\n");
+        String[] fields;
+        for (String line : lines) {
+            fields = line.split(this.delimiter);
+            for (int fieldNo = this.start; fieldNo < this.end && fieldNo < fields.length; fieldNo++) {
+                result.append(fields[fieldNo]);
+                result.append(this.delimiter);
+            }
+            result.append("\n");
+        }
+        return result.toString();
     }
 
     public String getFileName(){
