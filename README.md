@@ -87,7 +87,7 @@ Example -> `MP_ReduceSpaces one.txt`
 How To Install
 ==============
 
-*Copy the whole package of Unix Tools.
-*And then run following command from directory it is copied in.
+* Copy the whole package of Unix Tools.
+* And then run following command from directory it is copied in.
     `declare -x UNIX_HOME=$PWD`
-*Now you can run above unix tool commands from command line.
+* Now you can run above unix tool commands from command line.
