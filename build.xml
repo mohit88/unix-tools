@@ -23,13 +23,21 @@
 
     <target name="compileTest" depends="compile">
         <javac srcdir="${test.dir}" destdir="${testClasses.dir}"
-               classpath="${testLib.dir};${classes.dir}"/>
+               classpath="${testLib.dir}/junit-4.10.jar;${classes.dir}" includeantruntime = "false"/>
     </target>
 
     <target name="runTest" depends="compileTest">
-        <java classname="mohitsha.unixtools.lib.WCTest"
-              classpath="${testClasses.dir}:${testLib.dir}:${classes.dir}"/>
+        <java classname="org.junit.runner.JUnitCore"
+              classpath="${testClasses.dir};${testLib.dir}/junit-4.10.jar;${classes.dir}">
+            <arg value="mohitsha/unixtools/lib/*"/>
+        </java>
     </target>
+
+    <target name="createJar" depends="runTest">
+        <mkdir dir="${artifacts.dir}"/>
+        <jar destfile="${artifacts.dir}/unixtools.jar" basedir="${classes.dir}"></jar>
+    </target>
+
 
 </project>
 
