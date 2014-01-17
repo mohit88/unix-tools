@@ -1,6 +1,6 @@
 package mohitsha.unixtools.tail;
 
-import mohit.myfilereader.MyFileReader;
+import mohitsha.myIOStream.MyFileReader;
 
 public class Tail{
     void printLines(String[] lines,int start,int end){

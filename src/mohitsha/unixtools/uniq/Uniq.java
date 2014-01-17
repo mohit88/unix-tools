@@ -1,6 +1,6 @@
 package mohitsha.unixtools.uniq;
 
-import mohit.myfilereader.MyFileReader;
+import mohitsha.myIOStream.MyFileReader;
 
 public class Uniq {
     public static void main(String[] args) {

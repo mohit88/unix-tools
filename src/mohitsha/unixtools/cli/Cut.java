@@ -1,8 +1,8 @@
-package mohitsha.unixtools.cut;
+package mohitsha.unixtools.cli;
 
 
-import mohit.myfilereader.MyFileReader;
-import mohitsha.unixtools.cut.cutLib.CutInputLib;
+import mohitsha.myIOStream.MyFileReader;
+import mohitsha.unixtools.lib.CutInputLib;
 
 public class Cut {
 

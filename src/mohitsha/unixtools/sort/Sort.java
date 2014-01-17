@@ -1,6 +1,6 @@
 package mohitsha.unixtools.sort;
 
-import mohit.myfilereader.MyFileReader;
+import mohitsha.myIOStream.MyFileReader;
 
 import java.util.Arrays;
 

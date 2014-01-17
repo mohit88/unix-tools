@@ -1,6 +1,6 @@
 package mohitsha.unixtools.wc.cli;
 
-import mohit.myfilereader.MyFileReader;
+import mohitsha.myIOStream.MyFileReader;
 import mohitsha.unixtools.wc.WC;
 
 public class WcClient {

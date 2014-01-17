@@ -1,4 +1,4 @@
-package mohit.myfilereader;
+package mohitsha.myIOStream;
 
 import java.io.File;
 import java.io.FileNotFoundException;

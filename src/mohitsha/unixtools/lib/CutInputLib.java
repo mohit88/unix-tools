@@ -1,4 +1,4 @@
-package mohitsha.unixtools.cut.cutLib;
+package mohitsha.unixtools.lib;
 
 import java.util.Scanner;
 
