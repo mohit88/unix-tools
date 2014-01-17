@@ -1,9 +1,9 @@
 package mohitsha.unixtools.lib;
 
 import mohitsha.unixtools.wc.WC;
-import junit.Test;
+import org.junit.Test;
 
-import static junit.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class WCTest {
     @Test

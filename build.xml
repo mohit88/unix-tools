@@ -3,7 +3,7 @@
     <property file="build.properties" />
 
     <target name="clean">
-        <delete dir="build"></delete>
+        <delete dir="build"/>
     </target>
 
     <target name="init">
@@ -13,7 +13,7 @@
         <mkdir dir="${mainLib.dir}"/>
         <mkdir dir="${lib.dir}"/>
         <mkdir dir="${testLib.dir}"/>
-        <copy file="externalLib/junit.jar" todir="${testLib.dir}"/>
+        <copy file="externalLib/junit-4.10.jar" todir="${testLib.dir}"/>
         <mkdir dir="${externalLib.dir}"/>
     </target>
 
@@ -23,7 +23,7 @@
 
     <target name="compileTest" depends="compile">
         <javac srcdir="${test.dir}" destdir="${testClasses.dir}"
-               classpath="${classes.dir}:${testLib}/*.jar" includeantruntime = "false"/>
+               classpath="${testLib.dir};${classes.dir}"/>
     </target>
 
     <target name="runTest" depends="compileTest">
