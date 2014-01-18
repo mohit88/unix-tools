@@ -11,7 +11,8 @@ public class UniqLib {
             uniqueLines.append(lines[index]);
             uniqueLines.append("\n");
         }
-        if (lines.length != 0) uniqueLines.append(lines[lines.length - 1]);
+//        if (lines.length != 0)
+        uniqueLines.append(lines[lines.length - 1]);
 
         return uniqueLines.toString();
     }

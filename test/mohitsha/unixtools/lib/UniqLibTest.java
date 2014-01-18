@@ -12,6 +12,16 @@ public class UniqLibTest {
         String actual = new UniqLib().getUniqueLines(content);
 
         Assert.assertEquals(expected, actual);
-
     }
+
+    @Test
+    public void testGetUniqueLinesOfEmptyContents() throws Exception {
+        String content = "";
+        String expected = "";
+
+        String actual = new UniqLib().getUniqueLines(content);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }
