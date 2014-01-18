@@ -33,6 +33,7 @@
             <arg value="mohitsha.unixtools.lib.HeadLibTest"/>
             <arg value="mohitsha.unixtools.lib.ReduceSpacesLibTest"/>
             <arg value="mohitsha.unixtools.lib.TailLibTest"/>
+            <arg value="mohitsha.unixtools.lib.UniqLibTest"/>
         </java>
     </target>
 

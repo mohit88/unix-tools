@@ -1,6 +1,7 @@
 package mohitsha.unixtools.cli;
 
 import mohitsha.myIOStream.MyFileReader;
+import mohitsha.unixtools.lib.TailLib;
 
 public class Tail {
 
@@ -14,5 +15,7 @@ public class Tail {
 
         String fileContent = new MyFileReader().readFile(fileName);
 
+        String lastLines = new TailLib().getLastLines(fileContent, noOfLines);
+        System.out.println(lastLines);
     }
 }
