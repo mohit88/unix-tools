@@ -9,6 +9,6 @@ public class ReduceSpaces {
         String fileName = args[0];
         String fileContent = new MyFileReader().readFile(fileName);
         String reducedSpaceContent = new ReduceSpacesLib().reduceSpaces(fileContent);
-        new MyFileWriter().writeFile(fileName,fileContent);
+        new MyFileWriter().writeFile(fileName, reducedSpaceContent);
     }
 }
