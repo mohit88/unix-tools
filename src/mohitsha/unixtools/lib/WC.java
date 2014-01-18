@@ -1,4 +1,4 @@
-package mohitsha.unixtools.wc;
+package mohitsha.unixtools.lib;
 
 public class WC {
     public int countLines(String text) {

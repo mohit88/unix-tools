@@ -1,4 +1,4 @@
-package mohitsha.unixtools.reduceSpaces;
+package mohitsha.unixtools.cli;
 
 import mohitsha.myIOStream.MyFileReader;
 

@@ -5,8 +5,9 @@ import org.junit.Test;
 import org.junit.Assert;
 
 public class HeadLibTest {
+
     @Test
-    void GetStartingTwoLinesFromContent(){
+    public void GetStartingTwoLinesFromContent(){
         HeadLib headLib = new HeadLib();
         String content = "hello\nhow\nare\nyou\n?";
         String expected = "hello\nhow";
@@ -15,4 +16,6 @@ public class HeadLibTest {
 
         Assert.assertEquals(expected,actual);
     }
+
+
 }

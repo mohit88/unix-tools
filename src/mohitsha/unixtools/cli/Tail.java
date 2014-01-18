@@ -1,4 +1,4 @@
-package mohitsha.unixtools.tail;
+package mohitsha.unixtools.cli;
 
 import mohitsha.myIOStream.MyFileReader;
 

@@ -1,6 +1,5 @@
 package mohitsha.unixtools.lib;
 
-import mohitsha.unixtools.wc.WC;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -38,4 +37,5 @@ public class WCTest {
 
         assertEquals(expected,lines);
     }
+
 }

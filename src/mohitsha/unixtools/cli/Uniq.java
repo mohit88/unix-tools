@@ -1,19 +1,16 @@
-package mohitsha.unixtools.sort;
+package mohitsha.unixtools.cli;
 
 import mohitsha.myIOStream.MyFileReader;
 
-import java.util.Arrays;
-
-public class Sort {
+public class Uniq {
     public static void main(String[] args) {
         String fileName = args[0];
         String fileContent = new MyFileReader().readFile(fileName);
         String[] lines = fileContent.split("\n");
 
-        Arrays.sort(lines);
-
-        for (String line : lines) {
-            System.out.println(line);
+        for (int index = 0; index < lines.length-1 ; index++) {
+            if (lines[index].equals(lines[index+1])) continue;
+            System.out.println(lines[index]);
         }
     }
 }
