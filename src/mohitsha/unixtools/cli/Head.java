@@ -1,8 +1,7 @@
 package mohitsha.unixtools.cli;
 
 import mohitsha.myIOStream.MyFileReader;
-
-import java.util.Scanner;
+import mohitsha.unixtools.lib.HeadLib;
 
 public class Head {
     public static void main(String[] args) {
@@ -13,6 +12,8 @@ public class Head {
 
         String fileContent = new MyFileReader().readFile(fileName);
 
+        String startingLines = new HeadLib().getStartingLine(fileContent,noOfLines);
 
+        System.out.println(startingLines);
     }
 }
