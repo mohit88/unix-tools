@@ -1,8 +1,5 @@
 package mohitsha.unixtools.lib;
 
-/**
- * Created by mohitsha on 1/18/14.
- */
 public class TailLib {
 
     public String getLastLines(String content, int noOfLines) {
@@ -14,9 +11,10 @@ public class TailLib {
 
         int start = length - noOfLines;
 
-        for (int index = start; index < length; index++)
+        for (int index = start; index < length; index++) {
             lastLines.append(lines[index]);
-
+            lastLines.append("\n");
+        }
         return lastLines.substring(0, lastLines.length() - 1);
     }
 }

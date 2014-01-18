@@ -32,6 +32,7 @@
             <arg value="mohitsha.unixtools.lib.WCTest"/>
             <arg value="mohitsha.unixtools.lib.HeadLibTest"/>
             <arg value="mohitsha.unixtools.lib.ReduceSpacesLibTest"/>
+            <arg value="mohitsha.unixtools.lib.TailLibTest"/>
         </java>
     </target>
 

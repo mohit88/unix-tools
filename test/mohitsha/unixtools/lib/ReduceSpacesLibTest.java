@@ -1,11 +1,11 @@
 package mohitsha.unixtools.lib;
 
 import org.junit.Assert;
+import org.junit.Test;
 
-/**
- * Created by mohitsha on 1/18/14.
- */
 public class ReduceSpacesLibTest {
+
+    @Test
     public void testReduceExtraSpaces() throws Exception {
         ReduceSpacesLib rs = new ReduceSpacesLib();
         String content = "hello     how      are        you       ?";
