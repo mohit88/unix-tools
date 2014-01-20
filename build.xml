@@ -34,12 +34,13 @@
             <arg value="mohitsha.unixtools.lib.ReduceSpacesLibTest"/>
             <arg value="mohitsha.unixtools.lib.TailLibTest"/>
             <arg value="mohitsha.unixtools.lib.UniqLibTest"/>
+            <arg value="mohitsha.unixtools.lib.SortLibTest"/>
         </java>
     </target>
 
     <target name="createJar" depends="runTest">
         <mkdir dir="${artifacts.dir}"/>
-        <jar destfile="${artifacts.dir}/unixtools.jar" basedir="${classes.dir}"></jar>
+        <jar destfile="${artifacts.dir}/unixtools.jar" basedir="${classes.dir}"/>
     </target>
 
 </project>

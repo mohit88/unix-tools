@@ -88,6 +88,7 @@ How To Install
 ==============
 
 * Copy the whole package of Unix Tools.
-* And then run following command from directory it is copied in.
-    `declare -x UNIX_HOME=$PWD`
+
+* And then run `install.sh` in command line.
+
 * Now you can run above unix tool commands from command line.
